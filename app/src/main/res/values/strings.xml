@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Live Data Lab Class</string>
+    <string name="the_concatenated_values">The concatenated value is</string>
+    <string name="none">none</string>
+    <string name="no_value">--</string>
+    <string name="the_current_value_is">The current string is</string>
+    <string name="get_value">Get Value</string>
+</resources>

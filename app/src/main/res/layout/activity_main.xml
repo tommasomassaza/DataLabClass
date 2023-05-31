@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="64dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="@string/the_current_value_is"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/value"/>
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:textSize="52sp"
+        android:text="@string/no_value"
+        app:layout_constraintBottom_toTopOf="@+id/banner2"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+    <TextView
+        android:id="@+id/banner2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:text="@string/the_concatenated_values"
+        app:layout_constraintBottom_toTopOf="@+id/concatenated_values"
+        app:layout_constraintTop_toBottomOf="@+id/value" />
+
+    <TextView
+        android:id="@+id/concatenated_values"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:text="@string/none"
+        app:layout_constraintBottom_toTopOf="@id/refresh_button"
+        app:layout_constraintTop_toBottomOf="@+id/banner2" />
+
+    <Button
+        android:id="@+id/refresh_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/concatenated_values"
+        android:text="@string/get_value"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
